@@ -1,13 +1,10 @@
 # f-OFDM Spectral Shaping Filter Simulation
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![R](https://img.shields.io/badge/R-%3E%3D%204.3-276DC3?logo=r)](https://www.r-project.org/)
-[![Paper](https://img.shields.io/badge/Paper-ETRI%20Journal-orange)](https://doi.org/10.4218/etrij)
 
 > **Companion code** for the paper:  
 > *"Spectral Shaping Filter Architectures for Filtered-OFDM in 5G and Beyond: A Comprehensive Comparative Analysis of NGF, Sinc², TASM, and RRC Windows"*  
 > Pramoth Kumar M, Rajasingh J, Abhishek J, Sundararaj K  
-> ETRI Journal (submitted)
+> ETRI Journal
 
 ---
 
@@ -34,7 +31,7 @@ All filters are benchmarked across:
 ## Repository Structure
 
 ```
-├── fofdm_fig1to10_FIXED.R        # Main simulation (Figures 1–10)
+├── fofdm.R                        # Main simulation (Figures 1–10)
 ├── figures/                       # Generated plots (PNG)
 │   ├── Fig01_Filter_FreqResponse.png
 │   ├── Fig02_Filter_TimeResponse.png
@@ -44,8 +41,6 @@ All filters are benchmarked across:
 │   ├── SER_ideal_channel.csv
 │   ├── SpectralContainment_vs_noise.csv
 │   └── ...
-├── LICENSE
-├── CITATION.cff
 └── README.md
 ```
 
@@ -57,20 +52,6 @@ All filters are benchmarked across:
 - Required packages are **auto-installed** on first run:
   `ggplot2`, `dplyr`, `tidyr`, `patchwork`, `scales`, `pracma`, `latex2exp`
 
-### Run the Simulation
-
-```r
-# Clone and run
-git clone https://github.com/Pramo-M/OFDM-Filtersimulation.git
-cd OFDM-Filtersimulation
-
-# In R or RStudio:
-source("fofdm_fig1to10_FIXED.R")
-```
-
-Outputs are saved to `./figures/` (PDF + PNG) and `./results/` (CSV).
-
-> **Note:** The full simulation takes approximately 5–15 minutes depending on hardware. Increase `SIM$N_symbols` for denser constellation plots (default: 300).
 
 ## Figures
 
@@ -113,26 +94,6 @@ Outputs are saved to `./figures/` (PDF + PNG) and `./results/` (CSV).
 | OOBE suppression (1st adj.) | **−48.6 dBc** | −26.3 dBc | −34.5 dBc |
 | Complexity overhead | 5.6% | 5.6% | 5.6% |
 
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@article{pramoth2025fofdm,
-  title   = {Spectral Shaping Filter Architectures for Filtered-OFDM in 5G 
-             and Beyond: A Comprehensive Comparative Analysis of NGF, 
-             Sinc², TASM, and RRC Windows},
-  author  = {Pramoth Kumar, M. and Rajasingh, J. and Abhishek, J. 
-             and Sundararaj, K.},
-  journal = {ETRI Journal},
-  year    = {2025},
-  note    = {Submitted}
-}
-```
-
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ## Authors
 
