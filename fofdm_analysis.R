@@ -1,14 +1,13 @@
 # ==============================================================================
-#  f-OFDM Spectral Shaping Filter Analysis — Figures 11–14 & Tables VII–X
+#  f-OFDM Spectral Shaping Filter Analysis
 # ==============================================================================
 #
 #  Authors:  Pramoth Kumar M, Rajasingh J, Abhishek J, Sundararaj K
 #  Paper:    "Spectral Shaping Filter Architectures for Filtered-OFDM in 5G
 #             and Beyond: A Comparative Analysis of NGF, Sinc², TASM, and RRC"
-#  Journal:  ETRI Journal (submitted)
+#  Journal:  ETRI Journal 
 #
 #  Repository: https://github.com/j-abhishek26/filtered-OFDM
-#  License:    MIT
 #
 #  Description:
 #    Generates Figures 11–14 and supplementary figures for the above paper.
@@ -17,7 +16,7 @@
 #    (OOBE), PAPR/CCDF analysis, and computational complexity modelling.
 #
 #  Usage:
-#    source("fofdm_analysis_FIXED.R")
+#    source("fofdm_analysis.R")
 #
 #  Outputs:
 #    ./figures/Fig11_*.pdf/png  ...  Fig14_*.pdf/png
