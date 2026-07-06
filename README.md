@@ -32,6 +32,7 @@ All filters are benchmarked across:
 
 ```
 ├── fofdm.R                        # Main simulation (Figures 1–10)
+├── fofdm_analysis.R               # Figures 11–14: BER, PSD/OOBE, PAPR/CCDF, complexity
 ├── figures/                       # Generated plots (PNG)
 │   ├── Fig01_Filter_FreqResponse.png
 │   ├── Fig02_Filter_TimeResponse.png
